@@ -1,0 +1,388 @@
+
+--- Job Example1_refineddata.gms Start 03/10/13 16:05:31 WEX-WEI 23.9.5 x86_64/MS Windows     
+GAMS Rev 239  Copyright (C) 1987-2012 GAMS Development. All rights reserved
+Licensee: Department of Chemical & Biomolecular EngineeriG110825:1813AP-GEN
+          National University of Singapore                           DC2437
+          License for teaching and research at degree granting institutions
+--- Starting compilation
+--- Example1_refineddata.gms(1417) 3 Mb
+--- Starting execution: elapsed 0:00:00.131
+--- Example1_refineddata.gms(1109) 4 Mb
+--- Generating MIP model milp0
+--- Example1_refineddata.gms(1111) 5 Mb
+---   2,840 rows  1,065 columns  14,007 non-zeroes
+---   304 discrete-columns
+--- Executing CPLEX: elapsed 0:00:00.206
+
+IBM ILOG CPLEX   Jul  4, 2012 23.9.5 WEX 36376.36401 WEI x86_64/MS Windows
+--- GAMS/Cplex licensed for continuous and discrete problems.
+Cplex 12.4.0.1
+
+Reading data...
+Starting Cplex...
+Tried aggregator 2 times.
+MIP Presolve eliminated 328 rows and 56 columns.
+MIP Presolve modified 664 coefficients.
+Aggregator did 28 substitutions.
+Reduced MIP has 2484 rows, 981 columns, and 12652 nonzeros.
+Reduced MIP has 304 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing fixed 15 vars, tightened 42 bounds.
+Probing changed sense of 12 constraints.
+Probing time =    0.02 sec.
+Tried aggregator 1 time.
+MIP Presolve eliminated 120 rows and 78 columns.
+MIP Presolve modified 93 coefficients.
+Reduced MIP has 2364 rows, 903 columns, and 11826 nonzeros.
+Reduced MIP has 289 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time =    0.13 sec.
+Probing time =    0.00 sec.
+Clique table members: 647.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           477.337165
+Perturbation started.
+Iteration:    52   Dual objective     =           477.337165
+Iteration:   173   Dual objective     =           477.337641
+Iteration:   267   Dual objective     =           477.338191
+Iteration:   350   Dual objective     =           477.338551
+Iteration:   435   Dual objective     =           477.338850
+Iteration:   520   Dual objective     =           477.338999
+Iteration:   609   Dual objective     =           477.339071
+Removing perturbation.
+Root relaxation solution time =    0.09 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      477.3372    92                    477.3372      636         
+      0     0      477.3372    97                   Cuts: 212      999         
+      0     0      477.3372    31                  MIRcuts: 2     1000         
+*     0+    0                       143954.4176      477.3372     1000   99.67%
+      0     0      477.3372    66   143954.4176      Cuts: 99     1149   99.67%
+*     0+    0                       103314.2866      477.3372     1149   99.54%
+*     0+    0                        98466.2752      477.3372     1149   99.52%
+*     0+    0                        45405.1367      477.3372     1149   98.95%
+      0     2      477.3372    43    45405.1367      477.3372     1149   98.95%
+Elapsed real time =   1.25 sec. (tree size =  0.00 MB, solutions = 4)
+     13    15     4561.5038    74    45405.1367      477.3372     4892   98.95%
+*    20+   18                        30617.8730      477.3372     6317   98.44%
+     20    20      477.3372    70    30617.8730      477.3372     6317   98.44%
+     37    35      477.3372    45    30617.8730      477.3372     7767   98.44%
+     70    68      477.3372    38    30617.8730      477.3372     9146   98.44%
+    100    86    10637.3538    18    30617.8730      477.3372    12008   98.44%
+*   120+  104                        12528.4455      477.3372    12636   96.19%
+*   120+   67                         7178.7797      477.3372    12636   93.35%
+*   120+   66                         6616.0762      477.3372    12636   92.79%
+    120    65    11732.3631    16     6616.0762      477.3372    12636   92.79%
+    154    81        cutoff           6616.0762      477.3372    14716   92.79%
+                                                      Cuts: 9                  
+    180    93     1910.2112    31     6616.0762      477.3372    16539   92.79%
+                                                 Impl Bds: 17                  
+    232   116      477.3372    36     6616.0762      477.3372    19518   92.79%
+                                                  Impl Bds: 4                  
+    377   155     1409.7440    40     6616.0762      477.3372    31218   92.79%
+                                                  Impl Bds: 7                  
+Elapsed real time =   4.69 sec. (tree size =  4.13 MB, solutions = 8)
+    494   209     2885.3888    25     6616.0762      477.3372    41329   92.79%
+                                                     Cuts: 29                  
+    622   270      477.3372    48     6616.0762      477.3372    51195   92.79%
+                                                 Impl Bds: 31                  
+    812   395      477.3372    43     6616.0762      477.3372    62420   92.79%
+                                                     Cuts: 11                  
+*   880+  441                         6494.6547      477.3372    67611   92.65%
+                                                      Cuts: 4                  
+    946   481      477.3372    48     6494.6547      477.3372    71548   92.65%
+                                                  Impl Bds: 3                  
+*   990+  487                         6264.2863      477.3372    75997   92.38%
+                                                     Cuts: 13                  
+*   991+  463                         6057.1254      477.3372    76223   92.12%
+*   991+  446                         5739.1254      477.3372    76223   91.68%
+    992   449      477.3372    63     5739.1254      477.3372    76445   91.68%
+                                                  Impl Bds: 5                  
+*   993+  298                         4466.0539      477.3372    79533   89.31%
+*   993+  198                         4316.9212      477.3372    79533   88.94%
+    993   199      477.3372    36     4316.9212      477.3372    79533   88.94%
+   1001   174     3142.2830    64     4316.9212      477.3372    81747   88.94%
+   1013   134      477.3372    72     4316.9212      477.3372    84619   88.94%
+   1053   135     2303.8836    22     4316.9212      477.3372    90088   88.94%
+                                                  Impl Bds: 8                  
+*  1093+   81                         1995.1678      477.3372    93941   76.08%
+   1111    75      477.3372    43     1995.1678      477.3372    96180   76.08%
+Elapsed real time =  16.36 sec. (tree size =  1.80 MB, solutions = 15)
+*  1193+   79                         1410.2534      477.3372   101586   66.15%
+*  1193+   79                         1402.7233      477.3372   101586   65.97%
+   1222    85     1206.5856    21     1402.7233      477.3372   103807   65.97%
+   1329   126      477.3372    49     1402.7233      477.3372   111791   65.97%
+   1488   167      477.3372    16     1402.7233      477.3372   119604   65.97%
+*  1493+  112                         1172.3549      477.3372   119823   59.28%
+*  1555   126      integral     0     1006.8240      477.3372   122988   52.59%
+*  1655+  144                          911.6920      477.3372   128217   47.64%
+   1710   150      765.4240    27      911.6920      477.3372   130645   47.64%
+   1835   206      477.3372    50      911.6920      477.3372   137164   47.64%
+   2033   250      765.4240    20      911.6920      477.3372   145663   47.64%
+   2258   297      896.5856    37      911.6920      477.3372   155330   47.64%
+*  2333+  295                          896.5856      477.3372   159182   46.76%
+   2407   292      477.3372    34      896.5856      477.3372   164192   46.76%
+                                                 Impl Bds: 18                  
+*  2433+  222                          765.4240      477.3372   166870   37.64%
+*  2433+  119                          684.0038      477.3372   166870   30.21%
+   2509   117      477.3372    38      684.0038      477.3372   169400   30.21%
+Elapsed real time =  25.60 sec. (tree size =  2.97 MB, solutions = 23)
+   2613   131      477.3372    36      684.0038      477.3372   177502   30.21%
+                                                  Impl Bds: 3                  
+   2805   171      477.3372    11      684.0038      477.3372   184131   30.21%
+   3039   186        cutoff            684.0038      477.3372   191781   30.21%
+   3420   214    infeasible            684.0038      477.3372   200253   30.21%
+   3817   221      623.6052    34      684.0038      477.3372   209612   30.21%
+   3925   216      477.3372    65      684.0038      477.3372   214285   30.21%
+   4100   251    infeasible            684.0038      477.3372   221572   30.21%
+   4261   259      477.3372    48      684.0038      477.3372   230116   30.21%
+                                                      Cuts: 4                  
+   4479   246      477.3372    35      684.0038      477.3372   239618   30.21%
+   4661   289      477.3372    53      684.0038      477.3372   249036   30.21%
+                                                      Cuts: 9                  
+Elapsed real time =  35.19 sec. (tree size =  7.87 MB, solutions = 23)
+   4904   329      477.3372    46      684.0038      477.3372   258499   30.21%
+   5105   326      477.3372    29      684.0038      477.3372   266187   30.21%
+   5305   333      477.3372    57      684.0038      477.3372   274693   30.21%
+   5480   345      477.3372    39      684.0038      477.3372   282491   30.21%
+   5696   357      623.6052    46      684.0038      477.3372   291093   30.21%
+   5857   384        cutoff            684.0038      477.3372   298691   30.21%
+   6077   366      477.3372    66      684.0038      477.3372   306527   30.21%
+   6263   334      477.3372    61      684.0038      477.3372   313971   30.21%
+   6490   361      477.3372    42      684.0038      477.3372   323333   30.21%
+   6844   409      477.3372    24      684.0038      477.3372   331800   30.21%
+Elapsed real time =  44.33 sec. (tree size = 11.58 MB, solutions = 23)
+   7225   432        cutoff            684.0038      477.3372   341377   30.21%
+   7442   472        cutoff            684.0038      477.3372   349861   30.21%
+   7692   519      477.3372    54      684.0038      477.3372   358212   30.21%
+                                                  Impl Bds: 3                  
+   7830   505      477.3372    45      684.0038      477.3372   364802   30.21%
+   7907   520      477.3372    54      684.0038      477.3372   371658   30.21%
+                                                 Impl Bds: 14                  
+   8012   535      477.3372    66      684.0038      477.3372   377671   30.21%
+                                                  Impl Bds: 7                  
+   8168   539      574.7264    49      684.0038      477.3372   384873   30.21%
+   8345   563        cutoff            684.0038      477.3372   391904   30.21%
+   8570   589      623.6052    49      684.0038      477.3372   400045   30.21%
+   8881   512      610.6811    27      684.0038      610.6811   408408   10.72%
+Elapsed real time =  53.09 sec. (tree size = 14.59 MB, solutions = 23)
+   9167   498      610.6811    27      684.0038      610.6811   417219   10.72%
+   9693   380      623.6052    18      684.0038      623.6052   426123    8.83%
+  10170   331    infeasible            684.0038      623.6052   435610    8.83%
+  10635   151      623.6052    25      684.0038      623.6052   444087    8.83%
+  11076    35      623.6052    40      684.0038      623.6052   452791    8.83%
+
+GUB cover cuts applied:  4
+Clique cuts applied:  29
+Cover cuts applied:  1
+Implied bound cuts applied:  104
+Mixed integer rounding cuts applied:  18
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    1.11
+Sequential b&c:
+  Real time             =   56.74
+                          -------
+Total (root+branch&cut) =   57.84 sec.
+MIP status(101): integer optimal solution
+Fixing integer variables, and solving final LP...
+Tried aggregator 1 time.
+LP Presolve eliminated 2065 rows and 793 columns.
+Aggregator did 79 substitutions.
+Reduced LP has 696 rows, 193 columns, and 2206 nonzeros.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           684.003831
+Perturbation started.
+Iteration:    52   Dual objective     =           684.003831
+Removing perturbation.
+Fixed MIP status(1): optimal
+
+Proven optimal solution.
+
+MIP Solution:          684.003831    (457322 iterations, 11246 nodes)
+Final Solve:           684.003831    (119 iterations)
+
+Best possible:         684.003831
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Restarting execution
+--- Example1_refineddata.gms(1111) 2 Mb
+--- Reading solution for model milp0
+--- Executing after solve: elapsed 0:00:59.058
+--- Example1_refineddata.gms(1113) 3 Mb
+--- Generating MINLP model nlp0
+--- Example1_refineddata.gms(1118) 6 Mb
+--- LOOPS FOR/WHILE = 1
+---   2,169 rows  1,478 columns  13,193 non-zeroes
+---   2,592 nl-code  1,152 nl-non-zeroes
+--- Example1_refineddata.gms(1118) 4 Mb
+--- Executing DICOPT: elapsed 0:00:59.109
+
+Dicopt           Jul  4, 2012 23.9.5 WEX 36376.36401 WEI x86_64/MS Windows
+
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+--- Reset Solvelink = 2
+
+GAMS/BARON       Jul  4, 2012 23.9.5 WEX 36376.36401 WEI x86_64/MS Windows    
+
+===========================================================================
+ BARON version 11.5.2. Built: WIN-64 Mon Oct 22 23:20:37 EDT 2012
+
+ If you use this software, please cite:
+ Tawarmalani, M. and N. V. Sahinidis, A polyhedral
+ branch-and-cut approach to global optimization,
+ Mathematical Programming, 103(2), 225-249, 2005.
+
+ BARON is a product of The Optimization Firm, LLC. http://www.minlp.com/
+ Parts of the BARON software were created at the
+ University of Illinois at Urbana-Champaign.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP:  ILOG CPLEX                                      
+ For NLP: MINOS, SNOPT, GAMS external NLP solver, COIN IPOPT with MUMPS and METIS
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value 0.000000000000D+00
+ Problem solved during preprocessing
+ Lower bound is -.100000000000D-08
+
+ Cleaning up solution and calculating dual
+
+                         *** Normal Completion ***            
+
+  LP  subsolver time:        000:00:00,    in seconds:          0.00
+  NLP subsolver time:        000:00:02,    in seconds:          1.73
+  Cutting time:              000:00:00,    in seconds:          0.00
+  All other time:            000:00:00,    in seconds:          0.23
+
+  Total time elapsed:        000:00:02,    in seconds:          1.97
+       on parsing:           000:00:00,    in seconds:          0.17
+       on preprocessing:     000:00:02,    in seconds:          1.79
+       on navigating:        000:00:00,    in seconds:          0.00
+       on relaxed:           000:00:00,    in seconds:          0.00
+       on local:             000:00:00,    in seconds:          0.00
+       on tightening:        000:00:00,    in seconds:          0.00
+       on marginals:         000:00:00,    in seconds:          0.00
+       on probing:           000:00:00,    in seconds:          0.00
+
+  Total no. of BaR iterations:      -1
+  Best solution found at node:      -1
+  Max. no. of nodes in memory:       0
+
+  Cut generation statistics (number of cuts / CPU sec)
+    Bilinear                         0         0.00
+    Multilinears                     0         0.00
+    Convexity                        0         0.00
+
+ All done
+===========================================================================
+
+Solution      = 0  best solution found during preprocessing
+Best possible = -1E-9
+Absolute gap  = 1E-9  optca = 1E-9
+Relative gap  = 0  optcr = 0.1
+
+--- DICOPT: No discrete variables found
+--- DICOPT: Returning NLP solution
+
+      The model does not contain any discrete variables.
+      The NLP solution is returned to GAMS.
+      Advice: use an NLP solver for this model.
+
+--- Restarting execution
+--- Example1_refineddata.gms(1118) 3 Mb
+--- Reading solution for model nlp0
+--- Executing after solve: elapsed 0:01:02.327
+--- Example1_refineddata.gms(1113) 3 Mb
+--- Generating NLP model nlp1
+--- Example1_refineddata.gms(1131) 6 Mb
+--- LOOPS FOR/WHILE = 1
+---   1,673 rows  882 columns  11,029 non-zeroes
+---   1,056 nl-code  624 nl-non-zeroes
+--- Example1_refineddata.gms(1131) 4 Mb
+--- Executing BARON: elapsed 0:01:02.345
+
+GAMS/BARON       Jul  4, 2012 23.9.5 WEX 36376.36401 WEI x86_64/MS Windows    
+
+===========================================================================
+ BARON version 11.5.2. Built: WIN-64 Mon Oct 22 23:20:37 EDT 2012
+
+ If you use this software, please cite:
+ Tawarmalani, M. and N. V. Sahinidis, A polyhedral
+ branch-and-cut approach to global optimization,
+ Mathematical Programming, 103(2), 225-249, 2005.
+
+ BARON is a product of The Optimization Firm, LLC. http://www.minlp.com/
+ Parts of the BARON software were created at the
+ University of Illinois at Urbana-Champaign.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP:  ILOG CPLEX                                      
+ For NLP: MINOS, SNOPT, GAMS external NLP solver, COIN IPOPT with MUMPS and METIS
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value 0.550670498058D+03
+ Problem solved during preprocessing
+ Lower bound is 0.500609543689D+03
+
+ Cleaning up solution and calculating dual
+
+                         *** Normal Completion ***            
+
+  LP  subsolver time:        000:00:00,    in seconds:          0.00
+  NLP subsolver time:        000:00:00,    in seconds:          0.03
+  Cutting time:              000:00:00,    in seconds:          0.00
+  All other time:            000:00:00,    in seconds:          0.16
+
+  Total time elapsed:        000:00:00,    in seconds:          0.19
+       on parsing:           000:00:00,    in seconds:          0.12
+       on preprocessing:     000:00:00,    in seconds:          0.06
+       on navigating:        000:00:00,    in seconds:          0.00
+       on relaxed:           000:00:00,    in seconds:          0.00
+       on local:             000:00:00,    in seconds:          0.00
+       on tightening:        000:00:00,    in seconds:          0.00
+       on marginals:         000:00:00,    in seconds:          0.00
+       on probing:           000:00:00,    in seconds:          0.00
+
+  Total no. of BaR iterations:      -1
+  Best solution found at node:      -1
+  Max. no. of nodes in memory:       0
+
+  Cut generation statistics (number of cuts / CPU sec)
+    Bilinear                         0         0.00
+    Multilinears                     0         0.00
+    Convexity                        0         0.00
+
+ All done
+===========================================================================
+
+Solution      = 550.670498058  best solution found during preprocessing
+Best possible = 500.609543689
+Absolute gap  = 50.060954369  optca = 1E-9
+Relative gap  = 0.10000  optcr = 0.1
+
+--- Restarting execution
+--- Example1_refineddata.gms(1131) 3 Mb
+--- Reading solution for model nlp1
+--- Executing after solve: elapsed 0:01:02.721
+--- Example1_refineddata.gms(1113) 3 Mb
+*** Error at line 1135: Execution halted: abort$1 'best solution found'
+--- Example1_refineddata.gms(1113) 3 Mb 1 Error
+*** Status: Execution error(s)
+--- Job Example1_refineddata.gms Stop 03/10/13 16:06:34 elapsed 0:01:02.728
+Exit code = 3
